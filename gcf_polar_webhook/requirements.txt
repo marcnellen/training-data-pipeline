@@ -1,0 +1,5 @@
+Flask==2.3.2
+functions_framework==3.4.0
+google-cloud-pubsub==2.18.3
+protobuf==4.24.2
+google-cloud-logging==3.6.0

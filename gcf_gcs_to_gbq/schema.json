@@ -1,0 +1,260 @@
+[
+    {
+      "name": "upload-time",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "polar-user",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "transaction-id",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "device",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "device-id",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "start-time",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "start-time-utc-offset",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "duration",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "calories",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "distance",
+      "type": "FLOAT",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "heart-rate",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "average",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "maximum",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "training-load",
+      "type": "FLOAT",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "sport",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "has-route",
+      "type": "BOOLEAN",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detailed-sport-info",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "training-load-pro",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "cardio-load",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "cardio-load-interpretation",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "muscle-load",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "muscle-load-interpretation",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "perceived-load",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "perceived-load-interpretation",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "user-rpe",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "gpx",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "xmlns",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "xmlns:xsi",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "version",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "creator",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "xsi:schemaLocation",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "metadata",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "author",
+              "type": "RECORD",
+              "mode": "NULLABLE",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "STRING",
+                  "mode": "NULLABLE"
+                }
+              ]
+            },
+            {
+              "name": "time",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "bounds",
+              "type": "RECORD",
+              "mode": "NULLABLE",
+              "fields": [
+                {
+                  "name": "minlat",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "minlon",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "maxlat",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "maxlon",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "trk",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "trkseg",
+              "type": "RECORD",
+              "mode": "NULLABLE",
+              "fields": [
+                {
+                  "name": "trkpt",
+                  "type": "RECORD",
+                  "mode": "REPEATED",
+                  "fields": [
+                    {
+                      "name": "lat",
+                      "type": "FLOAT",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "lon",
+                      "type": "FLOAT",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "ele",
+                      "type": "FLOAT",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "time",
+                      "type": "STRING",
+                      "mode": "NULLABLE"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
