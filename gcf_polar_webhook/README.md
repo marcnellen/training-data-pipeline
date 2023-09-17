@@ -9,7 +9,7 @@ The function uses the following environment variables. The variables will be set
 - **PROJECT_ID**: Your Google Cloud project ID.
 - **TOPIC**: The Pub/Sub topic where you want to publish the incoming data.
 
-Create the folloing secret with Secret Manager. The secret will be deployed as environment variable with function deployment.
+Create the following secret with Secret Manager. The secret will be deployed as environment variable with function deployment.
 
 - **SIGNATURE_SECRET_KEY**: The secret key used for verifying the incoming webhook's HMAC signature.
 

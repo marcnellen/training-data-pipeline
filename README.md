@@ -33,7 +33,7 @@ The pipeline consists of three main functions:
 - Enable Google Cloud APIs and Service Accounts: Cloud Functions, Pub/Sub, Cloud Storage, BigQuery.
 - Create a Pub/Sub topic that is used as trigger for the GCS Data Uploader.
 - Configure environment variables and secrets for each function, as described in the respective READMEs.
-- Configure a BigQuery dataset and table with the following [schema](./gcf_gcs_to_gbq/schema.json)
+- Configure a BigQuery dataset and table with the following [schema](./gcf_gcs_to_gbq/schema.json).
 
 > :information_source: **Note:** The application currently doesn't handle authorization flows! In case the access token has expired, you must manually request a new one through the token endpoint."
 
@@ -52,4 +52,4 @@ The pipeline consists of three main functions:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./License) file for details.
